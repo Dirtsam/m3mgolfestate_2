@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- links stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>M3M_golf_estate2</title>
+</head>
+<body>
+     <!-- <div class="hero-background-img"> -->
+            <header>
+                <nav class="flex navbar nav-ph-flex container">
+                    <li>
+                        <a class="btn nav-contact" href="tel:9311444719">9311444719</a>
+                    </li>
+                    <ul class="nav-links flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutUs">About Us</a>
+                        </li>
+                  <li>
+                            
+                        <!-- Trigger/Open The Modal -->
+                            <a id="myBtn" class="btn pri-btn popupBtn" href="#">
+                                Brochure
+                            </a> 
+
+                             <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="contact-form">
+                                <form onsubmit="contactEmail(); reset(); return false;">
+                                    <div>
+                                        <label for="name">Full Name</label>
+                                        <input required id="name" type="text" placeholder="Full name">
+                                    </div>
+                                    <div class="phone-label">
+                                        <label for="phone">Phone Number</label>
+                                        <input required id="phone" type="tel" name="phone"placeholder='+91'>
+                                    </div>
+                                    <button class="btn-submit btn-accent popup-btn-accent" type="submit">Contact</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                    </ul>
+                    <div class="logo">
+                        <img src="./img/LOGO.svg" alt="logo_navbar">
+                    </div>
+                </nav>
+              
+                </div>
+            </header>
+            <!-- hero section -->
+            <section class="hero-sec overlay">
+                <a href="https://api.whatsapp.com/send?phone=9311444719" class="fixed right-8 left-auto whatsapp-logo">
+                    <div class="whatsp-style"><img src="./img/whatsapp.gif" alt="icon"></div></a>
+                    <!-- <div class="overlay"></div> -->
+                    <div class="container">
+                        <div class="container__wrapper">
+                            <h1 class="hero-title text-center">
+                                 <span>Live the</span>
+                                Golf life
+                            </h1>
+                            <form onsubmit="sendNum(); reset(); return false;">
+                                <button class="pri-btn btn scaleBtn"type="submit">Wanna talk?</button>
+                                <input type="tel" id="contactNum" placeholder="Send us your number......" required>
+                            </form>
+                        </div>
+                    </div>
+            </section>
+        <!-- </div> -->
+            <video playsinline autoplay muted loop>
+                <source src="./img/bg.mp4" type="video/mp4">
+                 <source src="./img/bg.mp4" type="video">
+           </video>
+    <!-- img-1 section -->
+    <section class="showcase1">
+            <img src="./img/Showcase_1.jpg" alt="showcase-image">
+        </section>
+
+        <!-- Abbout the Project section -->
+    <section class="about_project">
+        <div class=" about-project-container container__wrapper">
+            <h1 class="heading about-project-title">M3M GOLF ESTATE PHASE 2</h1>
+            <p>Sector 79, SPR Road, Gurgaon</p>
+            <div class="bar"></div>
+                <div class="showcase-box container__wrapper">
+                    <p>Golf Estate 2 M3M built for residents to enjoy a golf resort-themed living experience. M3M Golf Estate 2 offers luxury apartments with a reversible golf course and 9-holes. over 9-hole reversible golf course. The project offers a modern design and entrance that accommodate guests in style through a palm-lined grand entrance.
+                        Golf Estate 2 towers offers the tower drop offs, lounge and lobby areas to your family and guests in the stilt area. The interior of Golf Estate home is magnificently painted with style. Explore 3 & 4 BHK in luxury apartments in gurgaon</p>
+                        <div class="flex showcase-flex">
+                            <div>
+                                <ul>
+                                    <li>55</li>
+                                    <div class="bar small-bar"></div>
+                                    <li>ACRES OF LAND</li>
+                                 </ul>
+                             </div>
+                            <div>
+                                <ul>
+                                    <li>14</li>
+                                    <div class="small-bar bar"></div>
+                                    <li>Towers</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>G+31</li>
+                                    <div class="small-bar bar"></div>
+                                    <li>TOTAL FLOORS</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>1400</li>
+                                    <div class="small-bar bar"></div>
+                                    <li>TOTAL UNITS</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </section>
+    <section class="showcase-2">
+        <img src="./img/Showcase_2.jpg" alt="showcase_img">
+    </section>
+
+    <!-- Project highlights section -->
+    <section class="project-highlights-sec">
+        <div class="container">
+            <h1 class="heading highlights-title text-center">Highlights</h1>
+            <div class="flex split">
+                <div>
+                    <img src="./img/Highlights_img.jpg" alt="image">
+                </div>
+                <div>
+                    <ul>
+                        <li>Fully Modular Kitchen.</li>
+                        <li>Modular wardrobes & dressers in all rooms.</li>
+                        <li>25000 sqft Club with all luxury amenities.</li>
+                        <li>Half olympic size Swimming Pool with separate kids pool.</li>
+                        <li>6 Ev charger station</li>
+                        <li>Luxury bedrooms with Large Balcony</li>
+                        <li>VRV AC system in all units</li>
+                        <li>Big Brands Luxury Project Near by</li>
+                        <li>6 acre dedicated green area.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aminities Section -->
+    <section class="aminities">
+        <h1 class="heading amini-title text-center">Aminities</h1>
+        <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/Aminities_1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/Aminities_2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/Aminities_3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/Aminities_5.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+    <!-- showcase section -->
+    <section class="showcase-4">
+        <img src="./img/showcase_3.jpg" alt="img">
+    </section>
+    <section class="showcase-4">
+        <img src="./img/Showcase_4.jpg" alt="img">
+    </section>
+
+    <!-- Location Advantages Section -->
+     <section class="location-advan-sec">
+        <div class="container">
+            <h1 class="heading highlights-title text-center">Location Advantages</h1>
+            <div class="flex split">
+                <div>
+                    <ul>
+                        <li>2.4 Km From Golf Course Extension Road</li>
+                        <li>4.6 Km From SkyJumper Trampoline Park Gurgaon</li>
+                        <li>4.8 Km From Heritage Xperiential Learning School</li>
+                        <li>4.9 Km From Indira Gandhi Eye Hospital</li>
+                        <li>4.9 Km From Lemon Tree Hotel, Sohna Road</li>
+                        <li>5 Mins to Diplomatic Enclave</li>
+                        <li>5.8 Km From PVR Drive In Theatre</li>
+                        <li>6.4 Km From Rapid Metro Sector 55-56</li>
+                        <li>6.5 Km From KIIT College of Engineering</li>
+                        <li>23.1 Km From Indira Gandhi International Airport</li>
+                    </ul>
+                    
+                </div>
+                <div>
+                    <img src="./img/Location_img.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor plan section -->
+        <section class="floor-section">
+                <div class="container">
+                    <h1 class="floor-title heading text-center">Floors Plan</h1>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/floor_1.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/floor_2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/floor_3.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/floor_4.png" alt="Third slide">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <a id="BrochureBtn" class="btn pri-btn">Download Brochure</a>
+                     <!-- The Modal -->
+                     <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="contact-form">
+                                <form onsubmit="contactEmail(); reset(); return false;">
+                                    <div>
+                                        <label for="name">Full Name</label>
+                                        <input required id="name" type="text" placeholder="Full name">
+                                    </div>
+                                    <div class="phone-label">
+                                        <label for="phone">Phone Number</label>
+                                        <input required id="phone" type="tel" name="phone"placeholder='+91'>
+                                    </div>
+                                    <button class="btn-submit btn-accent popup-btn-accent" type="submit">Contact</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    <!-- Showcase section -->
+    <section class="showcase_5">
+        <img src="./img/extra_space.png" alt="">
+    </section>
+    <section class="showcase_6">
+        <img src="./img/showcase_4.png" alt="">
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="aboutUs">
+        <div class="container">
+            <h1 class="heading aboout-title">About Us</h1>
+            <div class="about-container-wrapper">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum sed vitae dicta esse libero commodi mollitia laboriosam ut laborum unde ipsum maiores. Recusandae laboriosam in odit eius ullam quibusdam, labore, dolorum voluptas sit nesciunt officia inventore maiores modi blanditiis voluptatem, soluta quidem ipsa dolor molestiae. Eius voluptatibus doloremque veritatis?</p>
+                <a href="#aboutUs" id="BrochureBtn2" class="btn-accent btn">Download Brochure</a>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="contact-form">
+                            <form onsubmit="contactEmail(); reset(); return false;">
+                                <div>
+                                    <label for="name">Full Name</label>
+                                    <input required id="name" type="text" placeholder="Full name">
+                                </div>
+                                <div class="phone-label">
+                                    <label for="phone">Phone Number</label>
+                                    <input required id="phone" type="tel" name="phone"placeholder='+91'>
+                                </div>
+                                <button class="btn-submit btn-accent popup-btn-accent" type="submit">Contact</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase section -->
+    <section class="showcase_6">
+        <img src="./img/Showcase_6.jpg" alt="">
+    </section>
+
+    <!-- Contact section --> 
+    <section class="contact" id="contactUs">
+        <div class="container">
+            <!-- <div class="logo">
+                <img src="./img/LOGO.svg" alt="logo">
+            </div> -->
+            <div class="flex split contact-split">
+                <div>
+                    <form onsubmit="contactEmail(); reset(); return false;">
+                        <div>
+                            <label for="Name">Full name</label>
+                            <input id="cName" type="text" required placeholder="e.g. Sanjay Sushiv">
+                        </div>
+                        <div>
+                            <label for="Phone">Contact Number</label>
+                            <input id="cPhone" type="tel"required placeholder="+91">
+                        </div>
+                        <button type="submit" class="contact-btn btn pri-btn">
+                            Let's talk future
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div class="title__description">
+                        <h1 class="contact-title heading">
+                            Contact Us
+                        </h1>
+                        <p>Let's talk about Love to hear from you!</p>
+                    </div>
+                    <div class="split-text flex split">
+                        <div>
+                            <h3>Corporate Office</h3>
+                            <p>M3M Tee Point, 6th Floor, Golf Course Ext Rd, Sector 65, Gurugram, Haryana 122002</p>
+                        </div>
+                        <div>
+                            <h3>How can we help?</h3>
+                            <p>propgrowofficial@gmail.com</p>
+                            <p>+91 9311444719</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 All Rights Reserved | Powered by M3M Group Private Limited | Policy | Term and Conditions</p>
+    </footer>
+    
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="
+https://smtpjs.com/v3/smtp.js">
+</script>
+    <script src="./app.js"></script>
+</body>
+</html>
